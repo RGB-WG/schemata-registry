@@ -12,7 +12,7 @@ generated out of schema id. To generate mnemonic, use the following commands:
 
 ```bash
 $ cargo install crc32mnemo
-$ crc32mnemo --beach 32 <schema-id>
+$ crc32mnemo --bech32 $SCHEMA_ID
 ```
 
 ## Registry
