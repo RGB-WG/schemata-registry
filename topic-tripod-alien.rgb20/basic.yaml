@@ -1,0 +1,117 @@
+---
+Standard: RGB20
+Name: Legacy
+License: CC-0
+---
+rgb_features: ""
+root_id: rgbsh1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqxhr060
+type_system: >
+  OutPoint: Txid,U16
+  Txid: U8^32
+field_types:
+  0: Ascii
+  1: Ascii
+  3: U8
+  4: I64
+  160: U64
+  176: U64
+  177: OutPoint
+  178: U8
+owned_right_types:
+  1: attachment
+  160: zk64
+  161: zk64
+  170: declarative
+  171: declarative
+public_right_types: []
+genesis:
+  metadata:
+    0: required
+    1: required
+    3: required
+    4: required
+    160: required
+  owned_rights:
+    1: allowed
+    160: allowed-many
+    161: allowed-many
+    170: allowed
+  public_rights: []
+extensions: {}
+transitions:
+  0:
+    metadata: {}
+    closes:
+      161: required-many
+    owned_rights:
+      161: allowed-many
+    public_rights: []
+  4112:
+    metadata:
+      0: allowed
+      1: allowed
+      3: allowed
+    closes:
+      1: required
+    owned_rights:
+      1: allowed
+    public_rights: []
+  4256:
+    metadata:
+      160: required
+    closes:
+      160: required-many
+    owned_rights:
+      160: allowed-many
+      161: allowed-many
+      170: allowed
+    public_rights: []
+  4257:
+    metadata: {}
+    closes:
+      170: required
+    owned_rights:
+      170: allowed
+      171: allowed
+    public_rights: []
+  4258:
+    metadata:
+      176: required
+      177: required-many
+      178: allowed-many
+      179: required
+    closes:
+      171: required
+    owned_rights:
+      171: allowed
+    public_rights: []
+  4259:
+    metadata:
+      160: required
+      176: required
+      177: required-many
+      178: allowed-many
+      179: required
+    closes:
+      171: required
+    owned_rights:
+      161: required-many
+      171: allowed
+    public_rights: []
+  32768:
+    metadata: {}
+    closes:
+      1: allowed
+      160: allowed-many
+      161: allowed-many
+      170: allowed
+      171: allowed-many
+    owned_rights:
+      1: allowed
+      160: allowed-many
+      161: allowed-many
+      170: allowed
+      171: allowed-many
+    public_rights: []
+script: embedded-vm
+override_rules: allow-any-vm
