@@ -17,8 +17,6 @@ $ crc32mnemo --beach 32 <schema-id>
 
 ## Registry
 
-### RGB20 schemata
-
-| Mnemonic | Author | # of schemata | Root schema id                                                   |
-| -------- | ------ |---------------|------------------------------------------------------------------|
-| topic-tripod-alien | LNP/BP Standards Associaiton | 2             | rgbsh1636y76cxrnsfqg7zjnl08f0kqt9j09tre2wfxzrrs86f76ssp7cqnn0yyf |
+| Mnemonic            | Standards | Author | # of schemata |
+|---------------------|-----------|--------|---------------|
+| topic-tripod-alien  | RGB20     | LNP/BP | 2             |
